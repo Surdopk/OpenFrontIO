@@ -250,6 +250,8 @@ export enum UnitType {
   MIRVWarhead = "MIRV Warhead",
   Train = "Train",
   Factory = "Factory",
+  Tank = "Tank",
+  Plane = "Plane",
 }
 
 export enum TrainType {
@@ -334,6 +336,13 @@ export interface UnitParamsMap {
 
   [UnitType.MIRVWarhead]: {
     targetTile?: number;
+  };
+  [UnitType.Tank]: {
+    targetTile?: TileRef;
+  };
+  [UnitType.Plane]: {
+    targetTile?: TileRef;
+    patrolTile?: TileRef;
   };
 }
 

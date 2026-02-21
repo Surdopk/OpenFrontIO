@@ -6,12 +6,18 @@ import atomBombSprite from "/sprites/atombomb.png?url";
 import hydrogenBombSprite from "/sprites/hydrogenbomb.png?url";
 import mirvSprite from "/sprites/mirv2.png?url";
 import samMissileSprite from "/sprites/samMissile.png?url";
-import tradeShipSprite from "/sprites/tradeship.png?url";
+import {
+  default as planeSprite,
+  default as tradeShipSprite,
+} from "/sprites/tradeship.png?url";
 import trainCarriageSprite from "/sprites/trainCarriage.png?url";
 import trainLoadedCarriageSprite from "/sprites/trainCarriageLoaded.png?url";
 import trainEngineSprite from "/sprites/trainEngine.png?url";
 import transportShipSprite from "/sprites/transportship.png?url";
-import warshipSprite from "/sprites/warship.png?url";
+import {
+  default as tankSprite,
+  default as warshipSprite,
+} from "/sprites/warship.png?url";
 
 // Can't reuse TrainType because "loaded" is not a type, just an attribute
 const TrainTypeSprite = {
@@ -25,6 +31,8 @@ type TrainTypeSprite = (typeof TrainTypeSprite)[keyof typeof TrainTypeSprite];
 const SPRITE_CONFIG: Partial<Record<UnitType | TrainTypeSprite, string>> = {
   [UnitType.TransportShip]: transportShipSprite,
   [UnitType.Warship]: warshipSprite,
+  [UnitType.Tank]: tankSprite,
+  [UnitType.Plane]: planeSprite,
   [UnitType.SAMMissile]: samMissileSprite,
   [UnitType.AtomBomb]: atomBombSprite,
   [UnitType.HydrogenBomb]: hydrogenBombSprite,

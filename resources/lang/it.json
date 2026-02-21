@@ -94,6 +94,10 @@
     "build_hydrogen_desc": "Grande bomba atomica. Viene generata dal più vicino Silo Missilistico e atterra nella zona in cui hai cliccato per costruirla.",
     "build_mirv": "MIRV",
     "build_mirv_desc": "La bomba atomica più potente del gioco. Si divide in bombe più piccole che copriranno una vasta gamma di territori. Danneggia solo il giocatore su cui hai cliccato per costruirla. Viene generata dal più vicino Silo Missilistico e atterra nella zona in cui hai cliccato per costruirla.",
+    "build_tank": "Carro Armato",
+    "build_tank_desc": "Unità di terra pesante. Molto resistente e veloce nel catturare territori. Ideale per sfondare le linee difensive.",
+    "build_plane": "Aereo",
+    "build_plane_desc": "Unità aerea veloce. Può sorvolare qualsiasi territorio per attaccare unità e strutture nemiche a distanza.",
     "player_icons": "Icone del giocatore",
     "icon_desc": "Esempi di alcune delle icone che incontrerai in gioco e cosa significano:",
     "icon_crown": "Corona - Numero 1. Questo è il giocatore numero uno della classifica.",
@@ -127,71 +131,8 @@
     "blacksea": "Mar Nero",
     "africa": "Africa",
     "asia": "Asia",
-    "mars": "Marte",
     "southamerica": "Sud America",
-    "britannia": "Britannia",
-    "gatewaytotheatlantic": "Colonne D'ercole",
-    "australia": "Australia",
-    "random": "Casuale",
-    "iceland": "Islanda",
-    "pangaea": "Pangea",
-    "betweentwoseas": "Tra I Due Mari",
-    "knownworld": "Mondo Conosciuto",
-    "faroeislands": "Isole Faroe",
-    "deglaciatedantarctica": "Antartide disghiacciata",
-    "europeclassic": "Europa (classica)",
-    "falklandislands": "Isole Falkland",
-    "baikal": "Lago Bajkal",
-    "halkidiki": "Halkidiki"
-  },
-  "map_categories": {
-    "continental": "Continentale",
-    "regional": "Regionale",
-    "fantasy": "Altro"
-  },
-  "private_lobby": {
-    "title": "Partecipa ad una Lobby Privata",
-    "enter_id": "Inserisci Id Della Lobby",
-    "player": "Giocatore",
-    "players": "Giocatori",
-    "join_lobby": "Unisciti a una Lobby",
-    "checking": "Verifica lobby...",
-    "not_found": "Lobby non trovata. Per favore controlla l'ID e riprova.",
-    "error": "Si è verificato un errore. Si prega di riprovare.",
-    "joined_waiting": "Iscritto con successo! In attesa che la partita inizi..."
-  },
-  "public_lobby": {
-    "join": "Partecipa alla prossima Partita",
-    "waiting": "Giocatori in attesa",
-    "teams": "{num} squadre"
-  },
-  "username": {
-    "enter_username": "Inserisci il tuo username",
-    "not_string": "Il nome utente deve essere una stringa.",
-    "too_short": "Il nome utente deve essere di almeno {min} caratteri.",
-    "too_long": "Il nome utente non deve superare {max} caratteri.",
-    "invalid_chars": "Il nome utente può contenere solo lettere, numeri, spazi, trattini bassi e [parentesi quadre]."
-  },
-  "host_modal": {
-    "title": "Lobby privata",
-    "mode": "Modalità",
-    "team_count": "Numero di Squadre",
-    "options_title": "Opzioni",
-    "bots": "Bot: ",
-    "bots_disabled": "Disabilitato",
-    "disable_nations": "Disabilita Nazioni",
-    "instant_build": "Costruzione Istantanea ",
-    "infinite_gold": "Oro infinito",
-    "infinite_troops": "Truppe infinite",
-    "enables_title": "Abilita impostazioni",
-    "player": "Giocatore",
-    "players": "Giocatori",
-    "waiting": "In attesa dei giocatori...",
-    "start": "Avvia Partita"
-  },
-  "game_starting_modal": {
-    "title": "La partita sta iniziando...",
-    "desc": "Preparazione per l'avvio della lobby. Attendere prego."
+    "random": "Casuale"
   },
   "difficulty": {
     "difficulty": "Difficoltà",
@@ -214,11 +155,14 @@
     "warship": "Nave da guerra",
     "missile_silo": "Silo Missilistico",
     "sam_launcher": "SAM Antimissile",
-    "atom_bomb": "Bomba atomica",
-    "hydrogen_bomb": "Bomba a idrogeno",
-    "mirv": "MIRV"
+    "atom_bomb": "Bomba Atomica",
+    "hydrogen_bomb": "Bomba A Idrogeno",
+    "mirv": "MIRV",
+    "factory": "Fabbrica",
+    "tank": "Carro Armato",
+    "plane": "Aereo"
   },
-  "user_setting": {
+  "user_settings": {
     "title": "Impostazioni Utente",
     "tab_basic": "Impostazioni Di Base",
     "tab_keybinds": "Tasti",
@@ -243,171 +187,6 @@
     "view_options": "Opzioni di visualizzazione",
     "toggle_view": "Attiva/Disattiva Vista",
     "toggle_view_desc": "Vista alternativa (terreno/nazioni)",
-    "zoom_controls": "Controlli dello zoom",
-    "zoom_out": "Zoom indietro",
-    "zoom_out_desc": "Riduce ingrandimento della mappa",
-    "zoom_in": "Zoom avanti",
-    "zoom_in_desc": "Aumenta ingrandimento della mappa",
-    "camera_movement": "Movimento vista",
-    "center_camera": "Centra vista",
-    "center_camera_desc": "Centra vista sul giocatore",
-    "move_up": "Sposta vista in alto",
-    "move_up_desc": "Sposta la vista verso l'alto",
-    "move_left": "Sposta vista a sinistra",
-    "move_left_desc": "Sposta vista a destra",
-    "move_down": "Sposta vista in basso",
-    "move_down_desc": "Sposta la vista verso il basso",
-    "move_right": "Sposta vista a destra",
-    "move_right_desc": "Sposta vista a sinistra",
-    "reset": "Resetta",
-    "unbind": "Unbind (cancella assegnazione tasto)"
-  },
-  "chat": {
-    "title": "Chat rapida",
-    "to": "Inviato a {user}: {msg}",
-    "from": "Da {user}: {msg}",
-    "category": "Categoria",
-    "phrase": "Frase",
-    "player": "Giocatore",
-    "send": "Invia",
-    "search": "Ricerca giocatori...",
-    "build": "Genera il tuo messaggio...",
-    "cat": {
-      "help": "Aiuto",
-      "attack": "Attacco",
-      "defend": "Difendi",
-      "greet": "Saluti",
-      "misc": "Varie",
-      "warnings": "Avvisi"
-    },
-    "help": {
-      "troops": "Donami truppe, per favore!",
-      "gold": "Donami oro, per favore!",
-      "no_attack": "Per favore, non attaccarmi!",
-      "sorry_attack": "Scusa, non avevo intenzione di attaccare.",
-      "alliance": "Alleanza?",
-      "help_defend": "Aiutami a difendermi da [P1]!",
-      "team_up": "Facciamo squadra contro [P1]!"
-    },
-    "attack": {
-      "attack": "Attacca [P1]!",
-      "mirv": "Lancia una MIRV su [P1]!",
-      "focus": "Focalizziamoci su [P1]!",
-      "finish": "Finiamo [P1]!"
-    },
-    "defend": {
-      "defend": "Difendi [P1]!",
-      "dont_attack": "Non attaccare [P1]!",
-      "ally": "[P1] è mio alleato!"
-    },
-    "greet": {
-      "hello": "Salve!",
-      "good_luck": "Buona fortuna!",
-      "have_fun": "Buon divertimento!",
-      "gg": "GG!",
-      "nice_to_meet": "Piacere di conoscerti!",
-      "well_played": "Bella giocata!",
-      "hi_again": "Ciao di nuovo!",
-      "bye": "Arrivederci!",
-      "thanks": "Grazie!",
-      "oops": "Ops, pulsante sbagliato!",
-      "trust_me": "Puoi fidarti di me. Davvero!",
-      "trust_broken": "Mi fidavo di te..."
-    },
-    "misc": {
-      "go": "Andiamo!",
-      "strategy": "Bella strategia!",
-      "fun": "Questa partita è divertente!",
-      "pr": "Quando verranno inserite le mie PR...?"
-    },
-    "warnings": {
-      "strong": "[P1] è forte.",
-      "weak": "[P1] è debole.",
-      "mirv_soon": "[P1] potrà lanciare una MIRV a breve!",
-      "number1_warning": "Il giocatore #1 vincerà presto a meno che non ci alleiamo!",
-      "stalemate": "Facciamo la pace. Siamo in stallo, perderemmo entrambi.",
-      "has_allies": "[P1] ha molti alleati.",
-      "no_allies": "[P1] non ha alleati.",
-      "betrayed": "[P1] ha tradito un alleato!",
-      "getting_big": "[P1] sta crescendo troppo velocemente!",
-      "danger_base": "[P1] è indifeso!",
-      "saving_for_mirv": "[P1] sta risparmiando per lanciare una MIRV.",
-      "mirv_ready": "[P1] ha abbastanza oro per lanciare una MIRV!"
-    }
-  },
-  "build_menu": {
-    "desc": {
-      "atom_bomb": "Piccola esplosione",
-      "hydrogen_bomb": "Grande esplosione",
-      "mirv": "Esplosione enorme ma colpisce solo il giocatore selezionato",
-      "missile_silo": "Utilizzato per lanciare attacchi nucleari",
-      "sam_launcher": "Ti difende dagli attacchi nucleari in arrivo",
-      "warship": "Cattura navi commerciali, combatte altre navi da guerra e affonda le navi trasporto",
-      "port": "Invia navi commerciali per generare oro",
-      "defense_post": "Aumenta le difese dei confini vicini",
-      "city": "Aumenta la popolazione massima"
-    },
-    "not_enough_money": "Denaro insufficiente"
-  },
-  "win_modal": {
-    "died": "Sei morto",
-    "your_team": "La tua squadra ha vinto!",
-    "other_team": "La squadra {team} ha vinto!",
-    "you_won": "Hai vinto!",
-    "other_won": "{player} ha vinto!",
-    "exit": "Esci dal gioco",
-    "keep": "Continuare a giocare"
-  },
-  "leaderboard": {
-    "title": "Classifica",
-    "hide": "Nascondi",
-    "rank": "Posizione",
-    "player": "Giocatore",
-    "owned": "In possesso",
-    "gold": "Oro",
-    "troops": "Truppe"
-  },
-  "player_info_overlay": {
-    "type": "Tipo",
-    "bot": "Bot",
-    "nation": "Nazione",
-    "player": "Giocatore",
-    "team": "Squadra",
-    "d_troops": "Truppe di difesa",
-    "a_troops": "Truppe d'attacco",
-    "gold": "Oro",
-    "ports": "Porti",
-    "cities": "Città",
-    "missile_launchers": "Sili missilistici",
-    "sams": "SAM",
-    "warships": "Nave da guerra",
-    "health": "Salute",
-    "attitude": "Relazione"
-  },
-  "relation": {
-    "hostile": "Ostile",
-    "distrustful": "Diffidente",
-    "neutral": "Neutrale",
-    "friendly": "Amichevole",
-    "default": "Predefinito"
-  },
-  "control_panel": {
-    "pop": "Pop",
-    "gold": "Oro",
-    "troops": "Truppe",
-    "workers": "Lavoratori",
-    "attack_ratio": "Rapporto di Attacco"
-  },
-  "player_panel": {
-    "gold": "Oro",
-    "troops": "Truppe",
-    "traitor": "Traditore",
-    "alliance_time_remaining": "Tempo rimanente",
-    "embargo": "Ha interrotto il commercio con te",
-    "nuke": "Attacchi nucleari da loro nei tuoi confronti",
-    "start_trade": "Inizia a commerciare",
-    "stop_trade": "Ferma il commercio",
-    "yes": "Si",
-    "no": "No"
+    "zoom_controls": "Controlli dello zoom"
   }
 }

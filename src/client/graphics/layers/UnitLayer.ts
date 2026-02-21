@@ -317,6 +317,12 @@ export class UnitLayer implements Layer {
       case UnitType.Warship:
         this.handleWarShipEvent(unit);
         break;
+      case UnitType.Tank:
+        this.handleTankEvent(unit);
+        break;
+      case UnitType.Plane:
+        this.handlePlaneEvent(unit);
+        break;
       case UnitType.Shell:
         this.handleShellEvent(unit);
         break;
@@ -346,6 +352,14 @@ export class UnitLayer implements Layer {
     } else {
       this.drawSprite(unit);
     }
+  }
+
+  private handleTankEvent(unit: UnitView) {
+    this.drawSprite(unit);
+  }
+
+  private handlePlaneEvent(unit: UnitView) {
+    this.drawSprite(unit);
   }
 
   private handleShellEvent(unit: UnitView) {
@@ -382,6 +396,14 @@ export class UnitLayer implements Layer {
 
   // interception missile from SAM
   private handleMissileEvent(unit: UnitView) {
+    this.drawSprite(unit);
+  }
+
+  private handleTradeShipEvent(unit: UnitView) {
+    this.drawSprite(unit);
+  }
+
+  private handleTrainEvent(unit: UnitView) {
     this.drawSprite(unit);
   }
 
@@ -481,14 +503,6 @@ export class UnitLayer implements Layer {
         255,
       );
     }
-  }
-
-  private handleTradeShipEvent(unit: UnitView) {
-    this.drawSprite(unit);
-  }
-
-  private handleTrainEvent(unit: UnitView) {
-    this.drawSprite(unit);
   }
 
   private handleBoatEvent(unit: UnitView) {
@@ -592,10 +606,10 @@ export class UnitLayer implements Layer {
       }
       this.context.drawImage(
         sprite,
-        Math.round(x - sprite.width / 2),
-        Math.round(y - sprite.height / 2),
+        x - sprite.width / 2,
+        y - sprite.height / 2,
         sprite.width,
-        sprite.width,
+        sprite.height,
       );
       if (!targetable) {
         this.context.restore();

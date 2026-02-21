@@ -134,7 +134,8 @@ export interface UnitUpdate {
   targetable: boolean;
   markedForDeletion: number | false;
   targetUnitId?: number; // Only for trade ships
-  targetTile?: TileRef; // Only for nukes
+  targetTile?: TileRef; // Only for nukes, tanks, planes
+  patrolTile?: TileRef; // Only for planes, warships
   health?: number;
   underConstruction?: boolean;
   missileTimerQueue: number[];

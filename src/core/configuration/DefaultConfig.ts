@@ -453,6 +453,26 @@ export class DefaultConfig implements Config {
           cost: () => 0n,
         };
         break;
+      case UnitType.Tank:
+        info = {
+          cost: this.costWrapper(
+            (numUnits: number) => Math.min(500_000, (numUnits + 1) * 100_000),
+            UnitType.Tank,
+          ),
+          maxHealth: 2000,
+          damage: 500,
+        };
+        break;
+      case UnitType.Plane:
+        info = {
+          cost: this.costWrapper(
+            (numUnits: number) => Math.min(1_500_000, (numUnits + 1) * 300_000),
+            UnitType.Plane,
+          ),
+          maxHealth: 800,
+          damage: 300,
+        };
+        break;
       default:
         assertNever(type);
     }

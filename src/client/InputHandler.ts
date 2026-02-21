@@ -222,6 +222,8 @@ export class InputHandler {
       buildMissileSilo: "Digit5",
       buildSamLauncher: "Digit6",
       buildWarship: "Digit7",
+      buildTank: "KeyK",
+      buildPlane: "KeyP",
       buildAtomBomb: "Digit8",
       buildHydrogenBomb: "Digit9",
       buildMIRV: "Digit0",
@@ -434,6 +436,16 @@ export class InputHandler {
       if (e.code === this.keybinds.buildWarship) {
         e.preventDefault();
         this.setGhostStructure(UnitType.Warship);
+      }
+
+      if (e.code === this.keybinds.buildTank) {
+        e.preventDefault();
+        this.setGhostStructure(UnitType.Tank);
+      }
+
+      if (e.code === this.keybinds.buildPlane) {
+        e.preventDefault();
+        this.setGhostStructure(UnitType.Plane);
       }
 
       if (e.code === this.keybinds.buildMIRV) {

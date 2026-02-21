@@ -164,7 +164,11 @@
     "build_hydrogen": "Hydrogen Bomb",
     "build_hydrogen_desc": "Large explosive bomb. Spawns from the nearest Missile Silo and lands in the area you first clicked to build it.",
     "build_mirv": "MIRV",
-    "build_mirv_desc": "The most powerful bomb in the game. Splits up into smaller bombs that will cover a huge range of territory. Only damages the player that you first clicked on to build it. Spawns from the nearest Missile Silo and lands in the area you first clicked to build it.",
+    "build_mirv_desc": "The most powerful nuke in the game. It splits into smaller nukes that will cover a wide range of territory. Only damages the player you clicked to build it on. Spawns from the nearest Missile Silo and lands in the area you clicked to build it.",
+    "build_tank": "Tank",
+    "build_tank_desc": "Heavy ground unit. Very durable and fast at capturing territory. Ideal for breaking through defensive lines.",
+    "build_plane": "Plane",
+    "build_plane_desc": "Fast air unit. Can fly over any territory to attack enemy units and structures from a distance.",
     "player_icons": "Player icons",
     "troubleshooting_desc": "If you experience performance issues, crashes, or other problems while playing OpenFront, please visit our Troubleshooting page for help diagnosing and fixing common issues:",
     "icon_desc": "Examples of some of the ingame icons you will encounter and what they mean:",
@@ -482,7 +486,9 @@
     "atom_bomb": "Atom Bomb",
     "hydrogen_bomb": "Hydrogen Bomb",
     "mirv": "MIRV",
-    "factory": "Factory"
+    "factory": "Factory",
+    "tank": "Tank",
+    "plane": "Plane"
   },
   "user_setting": {
     "title": "Settings",

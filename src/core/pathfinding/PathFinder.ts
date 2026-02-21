@@ -1,6 +1,7 @@
 import { Game } from "../game/Game";
 import { GameMap, TileRef } from "../game/GameMap";
 import { TrainStation } from "../game/TrainStation";
+import { AStarLand } from "./algorithms/AStar.Land";
 import { AStarRail } from "./algorithms/AStar.Rail";
 import { AStarWater } from "./algorithms/AStar.Water";
 import { AirPathFinder } from "./PathFinder.Air";
@@ -86,6 +87,15 @@ export class PathFinding {
     return PathFinderBuilder.create(pf).buildWithStepper({
       equals: (a, b) => a === b,
     });
+  }
+
+  static Land(game: Game): SteppingPathFinder<TileRef> {
+    const miniMap = game.miniMap();
+    const pf = new AStarLand(miniMap);
+
+    return PathFinderBuilder.create(pf)
+      .wrap((pf) => new MiniMapTransformer(pf, game.map(), miniMap))
+      .buildWithStepper(tileStepperConfig(game));
   }
 }
 
